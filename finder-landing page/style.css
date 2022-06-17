@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+.nav{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    /* margin: 30px 70px; */
+    padding: 30px;
+
+}
+.nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 30px;
+    color: #fff
+
+}
+.menu{
+    margin-left: 300px;
+
+}
+.logo img{
+	 cursor: pointer;
+    width: 120px;
+    margin: 10PX 110px;
+}
+.textBox{
+    width: 100%;
+    height: auto;
+    margin-top: 190px;
+}
+.textBox h1{
+    color: #fff;
+    font-size: 62px;
+    margin-left: 180px;
+}
+.textBox p{
+    color: #fff;
+    font-size: 18px;
+    margin-left: 180px;
+    margin-top: 10px;
+
+
+
+}
+.btn{
+    width: 150px;
+    height: 35px;
+    background-color: orangered;
+    color: #fff;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin-left: 180px;
+    margin-top: 30px;
+
+}
+.app{
+    /* border: 3px solid red; */
+    margin-left: 960px;
+    margin-top: 45px;
+    width: 200px;
+    padding: 10px;
+    height: auto;
+    display: flex;
+}
+.app h5{
+    color: #fff;
+    font-weight: lighter;
+}
+span{
+    padding: 5px;
+}
+.app img{
+    width: 20px;
+    
+}
+.app:hover{
+    background: orangered;
+    border-radius: 20px;
+	 cursor: pointer;
+}

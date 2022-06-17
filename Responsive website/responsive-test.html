@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        *{
+            /* border: 1px solid red; */
+
+        }
+        .main{
+            /* display: flex; */
+            justify-content: space-between;
+        }
+        .div1{
+            /* border: 3px solid red; */
+            padding: 10px;
+            word-wrap: wrap;
+
+        }
+        p{
+            color: red;
+        }
+        .div2 img{
+            width: 400px;
+            height: auto;
+            
+        }
+        .div3{
+            margin-left: 600px;
+
+
+        }
+        @media (max-width: 768px){
+            .main{
+                display: block
+            }
+            p{
+                color: green
+            }
+            .div1{
+                border: none;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+<div class="div1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, repudiandae voluptas! Alias facere fuga exercitationem, eos voluptatem laborum accusantium atque officia incidunt saepe. Numquam voluptates recusandae harum soluta doloremque sapiente ea, quibusdam distinctio deleniti, fugit quas veritatis, pariatur a at repellendus explicabo et aut beatae aspernatur rem dignissimos? Dignissimos beatae, sunt non quae et magni asperiores! Quo eligendi, atque repudiandae illum similique velit facilis? Officia rerum ipsam voluptas sunt, quod culpa rem fuga minus saepe possimus non dolores optio corrupti iure natus tempore numquam suscipit labore porro totam! Nulla deserunt soluta eaque quas tempore earum quaerat unde rerum ipsum neque accusantium consequatur aut quae, quod, provident ab incidunt voluptatibus. Quae a, architecto magnam cumque nostrum praesentium sunt sed, molestiae consequuntur commodi nihil maiores porro facere esse? Ipsa consequatur quia vitae eos accusantium itaque earum optio esse distinctio fuga, aliquam, quaerat non nam magni, debitis repellendus tempore commodi ea nihil? Accusantium quia est iusto laudantium expedita, nam adipisci temporibus similique porro sequi repellendus, voluptatem nostrum sit tenetur ullam culpa! Minima perspiciatis, rerum qui aperiam mollitia vel rem, iusto, culpa illum tempore eum velit libero ullam voluptas quo odit! Atque, magni fugiat nam reprehenderit libero consequuntur dolorem tempora esse neque expedita ut.</p>
+</div>
+<button onclick="changebackground()">Change bg</button>
+
+<div class="div4">
+<input type="text" name="name" id="name"/>
+<button onclick="greet()">greet</button>
+</div>
+
+<div class="greet"></div>
+
+
+            <div class="div3">
+            Name: <i id="result"></i><br>
+            <button onclick="call()"> Activate Prompt</button>
+            </div>
+</div>
+</body>
+
+<script type="text/javascript">
+    function changebackground(){
+        document.querySelector('.div1').style.backgroundColor = "cyan";
+    }
+    function greet(){
+    var name = document.getElementById('name').value;
+    var string = "hello " + name;
+    document.getElementsByClassName('greet')[0].innerHTML = string;
+}
+
+function call(){
+        var name = prompt("enter your name","");
+        document.getElementById('result').innerHTML = name;
+
+}
+</script>
+
+</html>
